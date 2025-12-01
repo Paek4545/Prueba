@@ -7,6 +7,8 @@
     <link rel='stylesheet' type='text/css' href="estilo_practica.css">
 </head>
 <body>
+    <script src="js_practica.js"> 
+    </script> 
 <h1>Prueba de página web</h1>
 <p> <span>Hola </span>, mi nombre es Tae Hyun Paek Lee, esto es una <b>prueba</b> de mi primera página HTML, donde voy a poner en práctica lo que hemos estado biendo estos días en clase</p>
 <br> Salto de línea </br>
@@ -18,7 +20,7 @@
 	<li> Plátano </li>
 	<li> Galleta </li>
 </ol>
-<p> Nos creamos una lista desordenada:</p>
+<p id ="i1" onmouseover='cambiarColor();'> Nos creamos una lista desordenada:</p>
 
 <h3 class="otroestilo"> Lista desordenada </h3>
 <ul> 
@@ -35,7 +37,7 @@
 <dd>  - Prueba que se hace de la idoneidad de una persona para el ejercicio y profesión de una facultad, oficio o ministerio, o para comprobar o demostrar el aprovechamiento en los estudios. </dd> 
 </dl>
 <h3> Imagen oficial de la UPM: </h3>
-<img src="UPM_logo.png" alt = "Logo Upm"> Imagen 1 desde descargas
+<img id ="i2" src="UPM_logo.png" alt = "Logo Upm" onmouseover="cambiarImagen();"> Imagen 1 desde descargas
 <img src="https://tse2.mm.bing.net/th/id/OIP.ff4xFWSveSrdRmt3O3GOqgHaIg?rs=1&pid=ImgDetMain&o=7&rm=3" 
      alt="Imagen desde internet"> Imagen 2 desde Internet
  <h3> Enlace a la página oficial de la UPM: </h3>
@@ -65,8 +67,10 @@
 <br></br>
 <p><h3> Introducimos un formulario:</h3></p>
 <form name="hola" method="GET" action="">
-<input type="text">
-<input type="checkbox">
+<input id="i3" type="text">
+<input type="checkbox" onclick='alternar();'>
+<input type="button" name="Botón" value = "Pulsar" onclick='holaMundo();'>
 <input type="submit">
+
 </body>
 </html>
