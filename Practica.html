@@ -6,9 +6,7 @@
 	<title>ALED pagina web</title>
     <link rel='stylesheet' type='text/css' href="estilo_practica.css">
 </head>
-<body>
-    <script src="js_practica.js"> 
-    </script> 
+<body> 
 <h1>Prueba de página web</h1>
 <p> <span>Hola </span>, mi nombre es Tae Hyun Paek Lee, esto es una <b>prueba</b> de mi primera página HTML, donde voy a poner en práctica lo que hemos estado biendo estos días en clase</p>
 <br> Salto de línea </br>
@@ -28,7 +26,7 @@
 	<li> Adiós </li>
 	<li> Un placer </li>
 </ul>
-<p> Nos creamos una lista desordenada:</p>
+<p class ="olakease"> Nos creamos una lista desordenada:</p>
 <h3> Lista definición </h3>
 <dl>
 <dt> Escuela </dt>
@@ -71,6 +69,22 @@
 <input type="checkbox" onclick='alternar();'>
 <input type="button" name="Botón" value = "Pulsar" onclick='holaMundo();'>
 <input type="submit">
+</form>
+<h3>Selección</h3>
+ <form name="formulario" action="calcular" method="GET"> 
+      Número 1: <input type="text" name="n1"> 
+      <br></br>
+      Número 2: <input type="text" name="n2"> 
+      <br></br>
+      <select name='operacion'> 
+    <option value='suma'>Opción 1</option> 
+    <option value='resta'>Opción 2</option> 
+      </select> 
+      <input type="submit" name="enviar" value="Enviar"> 
+   </form>
 
+   <h3>Pulsar el botón para cambiar el fondo de la página web:</h3>
+    <button id="cambiarColor">Cambiar color</button> 
+    <script src="js_practica.js"></script>
 </body>
 </html>
